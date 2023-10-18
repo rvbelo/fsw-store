@@ -1,4 +1,4 @@
-import { HomeIcon, ListOrderedIcon, LogInIcon, MenuIcon, PercentIcon, ShoppingCartIcon } from "lucide-react";
+import { MenuIcon, ShoppingCartIcon } from "lucide-react";
 import { Button } from "./button";
 import { Card } from "./card";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./sheet";
@@ -15,14 +15,7 @@ const Header = () => {
                 <SheetHeader className="text-left text-lg font-semibold">
                     Menu
                 </SheetHeader>
-
-                <div className="mt-2 flex flex-col gap-3">
-                <Button variant="outline" className="w-full justify-start gap-2"><LogInIcon size={16}/>Fazer Login</Button>
-                <Button variant="outline" className="w-full justify-start gap-2"><HomeIcon size={16} />Início</Button>
-                <Button variant="outline" className="w-full justify-start gap-2"><PercentIcon size={16} />Ofertas</Button>
-                <Button variant="outline" className="w-full justify-start gap-2"><ListOrderedIcon size={16} />Catálogo</Button>
-                </div>
-
+                <Button variant="outline" className="w-full justify-start">Fazer Login</Button>
             </SheetContent>
         </Sheet>
 
